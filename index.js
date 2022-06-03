@@ -14,7 +14,7 @@ function createDate(dates, index) {
     let datesEpochSecond = Date.parse(dates[id]) / 1000;
     arrDatesEpochSecond.push(datesEpochSecond);
   }
-  if (index > 0) {
+  if (index >= 0) {
     let datesIndex = arrDatesEpochSecond[index].toString();
     return datesIndex;
   } else if (index === undefined) {
